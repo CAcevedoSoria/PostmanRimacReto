@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "fa2f3322-47c4-4bee-bc02-50d4539a4209",
+		"name": "Rimac-Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"userId\": \"Jose\",\r\n \"name\" : \"luis\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://id7nhors5g.execute-api.us-east-1.amazonaws.com/dev/users",
+					"protocol": "https",
+					"host": [
+						"id7nhors5g",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://id7nhors5g.execute-api.us-east-1.amazonaws.com/dev/users/Jose",
+					"protocol": "https",
+					"host": [
+						"id7nhors5g",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"users",
+						"Jose"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Api Star Wars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/planets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"planets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
